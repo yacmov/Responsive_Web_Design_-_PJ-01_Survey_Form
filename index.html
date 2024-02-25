@@ -16,17 +16,10 @@
             <!-- Name, email, age, current role-->
             <fieldset>
                 <legend>Required information</legend>
-                <label for="first-name">First Name: <input type="text" id="first-name" name="first-name" required></label>
-                <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name" required></label>
-                <label for="age">your age groups: 
-                    <input type="radio" name="age"><label for="">10s</label>
-                    <input type="radio" name="age" checked><label for="">20s</label>
-                    <input type="radio" name="age"><label for="">30s</label>
-                    <input type="radio" name="age"><label for="">40s</label>
-                    <input type="radio" name="age"><label for="">50s</label>
-                    <input type="radio" name="age"><label for="">60s +</label>
-                </label>
-                <label for="email">Email: <input type="text" id="email" name="email" required></label>
+                <label for="first-name">First Name: <input placeholder="first name" type="text" id="first-name" name="first-name" required></label>
+                <label for="last-name">Last Name: <input placeholder="last name" type="text" id="last-name" name="last-name" required></label>
+                <label for="age">age(optional) <input type="number" id="age" name="age" min="13" max="90"></label>
+                <label for="email">Email: <input placeholder="email@domain.com" type="email" id="email" name="email" required></label>
                 <label for="current-roll"> Your current roll?
                     <select id="current-roll" name="current-roll">
                         <option value="0">(select one)</option>
@@ -53,15 +46,11 @@
             </fieldset>
             <!-- why are you learn the language?-->
             <fieldset>
-                <label for="reason">Reason to learn
-                    <select name="reason" id="reason">
-                        <option value="0">(select one)</option>
-                        <option value="1">for future employment</option>
-                        <option value="2">for personal interest</option>
-                        <option value="3">for assessments</option>
-                        <option value="4">others</option>
-                    </select>
-                </label>
+                <legend>Reason to learn</legend>
+                        <label for="future-em"><input id="future-em" type="radio" name="reason" checked> Future employment</label>
+                        <label for="personal-use"><input id="personal-use" type="radio" name="reason"> Personal interest</label>
+                        <label for="assessments"><input id="assessments" type="radio" name="reason"> Assessments</label>
+                        <label for="others"><input id="others" type="radio" name="reason"> Others</label>
 
             </fieldset>
             <!-- Any comments or suggestion? -->
@@ -71,7 +60,7 @@
                     <textarea name="comments" id="comments" cols="30" rows="2" placeholder="add your comments"></textarea>
                 </label>
             </fieldset>
-            
+            <input type="submit" value="Submit">
         </form>
     </main>
 </body>
