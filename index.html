@@ -14,13 +14,63 @@
     <main>
         <form action="" id="survey-form" method="post">
             <!-- Name, email, age, current role-->
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Required information</legend>
+                <label for="first-name">First Name: <input type="text" id="first-name" name="first-name" required></label>
+                <label for="last-name">Last Name: <input type="text" id="last-name" name="last-name" required></label>
+                <label for="age">your age groups: 
+                    <input type="radio" name="age"><label for="">10s</label>
+                    <input type="radio" name="age" checked><label for="">20s</label>
+                    <input type="radio" name="age"><label for="">30s</label>
+                    <input type="radio" name="age"><label for="">40s</label>
+                    <input type="radio" name="age"><label for="">50s</label>
+                    <input type="radio" name="age"><label for="">60s +</label>
+                </label>
+                <label for="email">Email: <input type="text" id="email" name="email" required></label>
+                <label for="current-roll"> Your current roll?
+                    <select id="current-roll" name="current-roll">
+                        <option value="0">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full-time employee</option>
+                        <option value="3">Part-time employee</option>
+                        <option value="4">Contractor</option>
+                        <option value="5">Others</option>
+                    </select>
+                </label>
+            </fieldset>
             <!-- Programming langues, how often,  -->
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Computer languages</legend>
+                <label for="html"><input type="checkbox" id="html" name="html"> HTML</label>
+                <label for="css"><input type="checkbox" id="css" name="css"> CSS</label>
+                <label for="js"><input type="checkbox" id="js" name="js"> JavaScript</label>
+                <label for="python"><input type="checkbox" id="python" name="python"> Python</label>
+                <label for="c-c++"><input type="checkbox" id="c-c++" name="c-c++"> C/C++</label>
+                <label for="cs"><input type="checkbox" id="cs" name="cs"> C#</label>
+                <label for="java"><input type="checkbox" id="java" name="java"> JAVA</label>
+                <label for="others"><input type="checkbox" id="others" name="others"> Others</label>
+
+            </fieldset>
             <!-- why are you learn the language?-->
-            <fieldset></fieldset>
+            <fieldset>
+                <label for="reason">Reason to learn
+                    <select name="reason" id="reason">
+                        <option value="0">(select one)</option>
+                        <option value="1">for future employment</option>
+                        <option value="2">for personal interest</option>
+                        <option value="3">for assessments</option>
+                        <option value="4">others</option>
+                    </select>
+                </label>
+
+            </fieldset>
             <!-- Any comments or suggestion? -->
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>ETC</legend>
+                <label for="comments">Comments
+                    <textarea name="comments" id="comments" cols="30" rows="2" placeholder="add your comments"></textarea>
+                </label>
+            </fieldset>
             
         </form>
     </main>
